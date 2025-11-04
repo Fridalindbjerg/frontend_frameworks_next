@@ -1,31 +1,27 @@
-import Image from "next/image";
-import Logo from "../img/Logo.png";
-import Search from "../img/search.png";
-import ShoppingBag from "../img/shoppingbag.png";
 import { DiApple } from "react-icons/di";
 import { IoSearch } from "react-icons/io5";
 import { TbBasket } from "react-icons/tb";
 
 const Header = () => {
   return (
-    <header className="wrapper">
+    <header className="col-span-full my-8 flex justify-between text-xl">
       <a href="#">
         <DiApple size={50} color="white" />
       </a>
-      <ul>
-        <li>Mac</li>
-        <li>iPhone</li>
-        <li>iPad</li>
-        <li>iWatch</li>
-        <li>Support</li>
+      <ul className="flex gap-10 p-0">
+        <li className="list-none">Mac</li>
+        <li className="list-none">iPhone</li>
+        <li className="list-none">iPad</li>
+        <li className="list-none">iWatch</li>
+        <li className="list-none">Support</li>
       </ul>
-      <div>
+      <div className="flex gap-3">
         <a href="#">
-          <IoSearch size={50} color="white" />
+          <IoSearch size={30} color="white" />
         </a>
-        <div>|</div>
+        <div className="text-2xl">|</div>
         <a href="#">
-          <TbBasket size={50} color="white" />
+          <TbBasket size={30} color="white" />
         </a>
       </div>
     </header>

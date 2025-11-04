@@ -5,8 +5,7 @@ const Button = ({ color, activeImage, setActiveImage, relatedImage }) => {
     <div
       onClick={() => setActiveImage(relatedImage)}
       style={{ backgroundColor: color }}
-      className={`dots
-        ${activeImage === relatedImage ? "border-3" : ""}`}
+      className={`h-5 w-5 rounded-full ${activeImage === relatedImage ? "border-[2px] border-white shadow-2xs outline-offset-[-3px]" : ""}`}
     />
   );
 };
