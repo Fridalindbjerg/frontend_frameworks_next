@@ -30,8 +30,8 @@ export default function Home() {
       </button>
 
       <div className="col-start-1 flex items-center gap-4 self-end justify-self-start">
-        <IoIosArrowRoundBack />
-        1 <IoIosArrowRoundForward />
+        <IoIosArrowRoundBack size={20} />
+        1 <IoIosArrowRoundForward size={20} />
       </div>
       <div className="col-start-3 row-start-2 flex flex-col justify-center gap-6">
         <Button
